@@ -30,9 +30,11 @@ body{
 .snake{
     background-color: #3fcf3f;  
     border: 1px solid #10641e;
+    border-radius: 30%;
 }
 
 .food{
     background-color: #ff0000;
     border: 1px solid #aa0606;
+    border-radius: 50%;
 }
