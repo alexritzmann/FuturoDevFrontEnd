@@ -10,3 +10,4 @@ let alunos = [
 alunos.forEach(aluno => aluno.nota >= 7 ? aluno.aprovado = true : aluno.aprovado = false);
 
 console.log(alunos);
+
