@@ -1,4 +1,8 @@
 
+
+// NÃO LEMBRO SE TERMINEI ISSO... ANTES DE USAR, VERIFICAR. 
+
+
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const perfil = document.getElementById('perfil');
