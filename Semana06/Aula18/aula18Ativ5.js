@@ -7,6 +7,8 @@ const botaoMostrar = document.getElementById('botao-mostrar');
 const senhaInput = document.getElementById('senha2');
 
 
+const listaUsuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
 function atualizarBotao() 
 {
     const camposPreenchidos = email.value.trim() !== "" && senha.value.trim() !== "";
@@ -32,6 +34,19 @@ botaoMostrar.addEventListener('click', () => {
     {
         senhaInput.type = 'password';
         botaoMostrar.textContent = 'Mostrar Senha';
+    }
+});
+
+
+botaoEntrar.addEventListener('click', () => 
+{
+    const usuarioEncontrado = listaUsuarios.find(u => u.email === email.value && u.senha === senha.value);
+    if (usuarioEncontrado) 
+    {
+        window.alert(`Bem-vindo, ${usuarioEncontrado.nome}!`);
+    } else 
+    {
+        window.alert('Usuário ou senhanão encontrado.');
     }
 });
 
