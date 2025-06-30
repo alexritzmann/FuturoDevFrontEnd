@@ -31,8 +31,21 @@ listaCelulares.forEach(celular =>
   const botoes = document.createElement('div');
   const botaoExcluir = document.createElement('button');
   botaoExcluir.textContent = 'Excluir';
+  const botaoAlterar = document.createElement('button');
+  botaoAlterar.textContent = 'Alterar';
 
+
+  botoes.appendChild(botaoExcluir);
+  botoes.appendChild(botaoAlterar);
+  acao.appendChild(botoes);
   
+
+  botaoAlterar.addEventListener('click', () => 
+  {
+    localStorage.setItem('celularEditando', JSON.stringify(celular));
+    window.location.href = '../Ex03/ex03.html';
+  });
+
   botaoExcluir.addEventListener('click', () => 
   {
     itemTabela.removeChild(novaLinha);
@@ -63,14 +76,16 @@ listaCelulares.forEach(celular =>
     totalCelularesUsados += 1;
   }
 
+
   novaLinha.appendChild(marcaCelular);
   novaLinha.appendChild(modeloCelular);
   novaLinha.appendChild(corCelular);
   novaLinha.appendChild(valorCelular);
   novaLinha.appendChild(estadoCelular);
   novaLinha.appendChild(descricaoCelular);
-  novaLinha.appendChild(botaoExcluir);
+  novaLinha.appendChild(acao);
   itemTabela.appendChild(novaLinha);
+
 });
 
 totalNovos.textContent = ("Total de Celulares Novos: " + totalCelularesNovos);
