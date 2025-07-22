@@ -38,3 +38,34 @@
   padding-left: 5px;
   margin-left: 5px;
 }
+
+.container-produtos{
+  background-color:rgb(179, 197, 174);
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-produtos > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
+.card-produtos{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  padding: 0px 30px;
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .card-produtos{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
