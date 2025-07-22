@@ -5,6 +5,7 @@ import PorQueInvestir from './components/pqInvestir/PorQueInvestir'
 import Produtos from './components/Produtos/produtos'
 import About from './components/sobreNos/About'
 import Orcamento from './components/budget/Orcamento'
+import Footer from './components/footer/Footer'
 
 function App() {
   
@@ -78,7 +79,9 @@ function App() {
       </main>
 
       <footer>
-
+        <div>
+          <Footer/>
+        </div>
       </footer>
     </div>
     </>
