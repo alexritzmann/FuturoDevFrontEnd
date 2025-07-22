@@ -16,6 +16,21 @@
   background-color: rgb(90, 133, 90);
 }
 
+.container-sobre-nos{
+  background-color:rgb(179, 197, 174);
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.container{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
 .container-pq-investir{
   background-color:lightgray;
   text-align: center;

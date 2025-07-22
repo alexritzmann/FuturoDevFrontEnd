@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import PorQueInvestir from './components/pqInvestir/PorQueInvestir'
 import Produtos from './components/Produtos/produtos'
+import About from './components/sobreNos/About'
 
 function App() {
   
@@ -18,10 +19,17 @@ function App() {
         </div>
       </header>
       <main>
+        <div className='container'>
+
+        <section id='sobre-nos' className='container-sobre-nos'>
+          
+          <About/>
+          
+        </section>
+
         <section id='porque-investir' className='container-pq-investir'>
           <h2>Por que investir em Energia Solar?</h2>
           
-            
             <div className='card-pq-investir'>
               <PorQueInvestir 
                 title='Redução da Conta'
@@ -42,7 +50,6 @@ function App() {
         <section id='produtos' className='container-produtos'>
           <h2>Nossos Produtos</h2>
           
-            
             <div className='card-produtos'>
               
               <Produtos 
@@ -61,7 +68,7 @@ function App() {
           
         </section>
 
-
+      </div>
       </main>
     </div>
     </>
