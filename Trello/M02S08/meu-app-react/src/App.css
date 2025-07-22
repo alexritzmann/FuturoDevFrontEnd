@@ -77,6 +77,19 @@
   margin: 0px 10px;
 }
 
+.container-budget{
+  background-color:lightgray;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-budget > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
 @media screen and (max-width: 850px) {
   .card-produtos{
     grid-template-columns: 1fr 1fr;

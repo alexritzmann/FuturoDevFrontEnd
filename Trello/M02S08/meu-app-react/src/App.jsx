@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import PorQueInvestir from './components/pqInvestir/PorQueInvestir'
 import Produtos from './components/Produtos/produtos'
 import About from './components/sobreNos/About'
+import Orcamento from './components/budget/Orcamento'
 
 function App() {
   
@@ -22,7 +23,6 @@ function App() {
         <div className='container'>
 
         <section id='sobre-nos' className='container-sobre-nos'>
-          
           <About/>
           
         </section>
@@ -68,8 +68,18 @@ function App() {
           
         </section>
 
+        <section id='orcamento' className='container-budget'>
+          <h2>Solicite seu Orçamento</h2>
+          <Orcamento/>
+
+        </section>
+
       </div>
       </main>
+
+      <footer>
+
+      </footer>
     </div>
     </>
   )
