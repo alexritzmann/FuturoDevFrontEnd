@@ -9,5 +9,9 @@
   background-color: rgb(58, 94, 58);
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding-top: 1px;
+}
+
+#div-navbar-menu{
+  background-color: rgb(90, 133, 90);
 }
