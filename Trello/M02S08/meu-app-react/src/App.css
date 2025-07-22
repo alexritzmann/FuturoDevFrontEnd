@@ -15,3 +15,26 @@
 #div-navbar-menu{
   background-color: rgb(90, 133, 90);
 }
+
+.container-pq-investir{
+  background-color:lightgray;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-pq-investir > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
+.card-pq-investir{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  margin-left: 5px;
+}
